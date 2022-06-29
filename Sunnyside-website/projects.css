@@ -1,0 +1,54 @@
+.section-one {
+  background-image: none;
+  height: 10vh;
+  background-color: #3ebfff;
+  padding: 0.6em;
+}
+
+.section-projects {
+  width: 100%;
+  height: 70%;
+
+}
+
+.projects-wrap {
+  width: 85%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.project-card p {
+  width: 80%;
+  font-family: "Fraunces", serif;
+  color: white;
+  margin: 20% auto;
+}
+
+.project-card img {
+  width: inherit;
+  height: inherit;
+}
+
+.text-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 92, 81, 0.5);
+  text-align: center;
+  display: none;
+}
+
+.project-card img:hover + .text-layer {
+  display: block;
+}

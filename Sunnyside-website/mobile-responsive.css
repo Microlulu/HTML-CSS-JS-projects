@@ -1,0 +1,124 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column !important;
+    display: none;
+  }
+
+  .motto {
+    font-size: 0.75em;
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .hamburger-custom{
+  display: block !important;
+  color: white;
+  font-size: 1.7em !important;
+  }
+
+  .section-two, .section-three, .section-four, .col-wrapper, .section-six{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-box, .box, .text-content {
+    width: 100%;
+  }
+
+  .text-content{
+    text-align: center;
+  }
+
+  .text-content h2{
+    font-size: 2em;
+  }
+
+  .header{
+    padding: 20px 0 ;
+  }
+
+  .text-wrap{
+    width: 70%;
+    margin: 90% auto 10% auto;
+  }
+
+  .col{
+    width: 100%;
+  
+  }
+  
+  .text-content p{
+    font-size: 1em;
+  }
+
+  .link-wrap{
+    width: 100%;
+  }
+
+  .links-row{
+    gap: 1em;
+  }
+
+}
+
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+  .text-wrap{
+    width: 70%;
+    margin: 120% auto 10% auto;
+  }
+
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+  .navbar{
+    width: 60%;
+  }
+
+  .text-wrap{
+    width: 70%;
+    margin: 170% auto 10% auto;
+  }
+
+}
+
+@media only screen
+and (min-device-width: 420px)
+and (max-device-width: 768px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+  .navbar{
+    width: 70%;
+  }
+
+  .text-wrap{
+    width: 70%;
+    margin: 170% auto 10% auto;
+  }
+
+}
+
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1160px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+  .navbar{
+    width: 70%;
+  }
+
+  .text-wrap{
+    width: 70%;
+    margin: 170% auto 10% auto;
+  }
+
+}

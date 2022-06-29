@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile-responsive.css" />
+  <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="section-one">
+    <div class="row header">
+      <img src="images/logo.svg" />
+      <i class="fa fa-bars hamburger-custom" onclick="showMobileNavbar();"></i>
+      <div class="navbar row" id="navbar">
+        <a href="index.html">About</a>
+        <a href="#services">Services</a>
+        <a href="project.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="motto">
+      <h1>WE ARE CREATIVES</h1>
+      <img src="images/icon-arrow-down.svg" />
+    </div>
+  </div>
+  <div class="section-two row">
+    <div class="text-box box">
+      <div class="text-content">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do
+          most of the marketing for you.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="image-box transform box"></div>
+  </div>
+  <div class="section-three row">
+    <div class="image-box standout box"></div>
+    <div class="text-box box">
+      <div class="text-content">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and
+          extend your brand in digital places.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="section-four row">
+    <div class="image-box box graphic-design">
+      <div class="text-wrap">
+        <h3>Graphic Design</h3>
+        <p>
+          Great design makes you memorable. We deliver artwork that
+          underscores your brand message and captures potential clients’
+          attention.
+        </p>
+      </div>
+    </div>
+    <div class="image-box box photography">
+      <div class="text-wrap">
+        <h3>Photography</h3>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="section-five">
+    <h2 class="testimonials-heading">Client testimonials</h2>
+    <div class="row col-wrapper">
+      <div class="col">
+        <img src="images/image-emily.jpg" />
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h2>Emily R.</h2>
+        <p>Marketing Director</p>
+      </div>
+      <div class="col">
+        <img src="images/image-thomas.jpg" />
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our
+          brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <h2>Thomas S.</h2>
+        <p>Chief Operating Officer</p>
+      </div>
+      <div class="col">
+        <img src="images/image-jennie.jpg" />
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h2>Jennie F.</h2>
+        <p>Business Owner</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-six row">
+    <div class="link-wrap">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" />
+      <img src="images/desktop/image-gallery-orange.jpg" />
+    </div>
+    <div class="link-wrap">
+      <img src="images/desktop/image-gallery-cone.jpg" />
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" />
+    </div>
+  </div>
+
+  <div class="section-seven">
+    <img src="images/logo-footer.svg">
+    <div class="links-row">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div class="links-row">
+      <a href="#">
+        <img src="images/icon-facebook.svg">
+      </a>
+      <a href="#">
+        <img src="images/icon-instagram.svg">
+      </a>
+      <a href="#">
+        <img src="images/icon-twitter.svg">
+      </a>
+      <a href="#">
+        <img src="images/icon-pinterest.svg">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function showMobileNavbar() {
+      var element = document.getElementById("navbar");
+      element.classList.toggle("navbar-mobile");
+    }
+
+  </script>
+</body>
+
+</html>
