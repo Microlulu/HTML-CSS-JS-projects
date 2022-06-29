@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+</head>
+
+<body class="crewpagebody background-box">
+
+    <div class="header row">
+        <div class="logo-wrap">
+            <img src="../assets/shared/logo.svg">
+        </div>
+        <div class="line"></div>
+        <div class="nav row">
+            <a href="../../index.html"><b>00 </b>Home</a>
+            <a href="destination.html"><b>01 </b>Destination</a>
+            <a href="crew.html"><b>02 </b>Crew</a>
+            <a href="technology.html"><b>03 </b>Technology</a>
+        </div>
+    </div>
+
+ <div class="page-content crew-content"> 
+    <h2 id="titlecrew"><span class="accent-number">02</span> Meet your crew</h2>
+    <div id="transrow" class="row">
+        <article class= "crewcenter">
+        <div class="left-col">
+            <h3 class="job-title" id="job-title"> Commander</h3>
+            <div class="crew-member" id="member-name">Douglas Hurley</div>
+            <div class="crew-info" id="member-info">Gerald Hurley is an American engineer, former Marine Corps pilot 
+                and former NASA astronaut. He launched into space for the third time as 
+                commander of Crew Dragon Demo-2.
+            </div>
+            <div class="row clicky-navbar">
+                <div class="dot active" id="dot-one" onclick="showCrewMemberInfo(this);"></div>
+                <div class="dot" id="dot-two"  onclick="showCrewMemberInfo(this);"></div>
+                <div class="dot" id="dot-three"  onclick="showCrewMemberInfo(this);"></div>
+                <div class="dot" id="dot-four"  onclick="showCrewMemberInfo(this);"></div>
+            </div>
+        </div>
+    </article>
+
+        <div class="right-col">
+            <figure class="guys"><img id="crew-pic" src="../assets/crew/image-douglas-hurley.png"></figure>
+        </div>
+    </div>
+
+ </div>
+
+<script src="crew.js"></script>
+
+</body>
+
+</html>

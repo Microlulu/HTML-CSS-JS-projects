@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+
+</head>
+
+<body class="destinationbody background-box">
+
+    <div class="header row">
+        <div class="logo-wrap">
+            <img src="../assets/shared/logo.svg">
+        </div>
+        <div class="line"></div>
+        <div class="nav row">
+            <a href="../../index.html"><b>00 </b>Home</a>
+            <a href="destination.html"><b>01 </b>Destination</a>
+            <a href="crew.html"><b>02 </b>Crew</a>
+            <a href="technology.html"><b>03 </b>Technology</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <h2 id="pick"><span class="accent-number">01</span> Pick Your Destination</h2>
+
+        <article>
+            <div class="planet-wrap">
+
+                <div class="planet-image">
+                    <img id="planet-img" src="../assets/destination/image-moon.png">
+
+                </div>
+                <div class="planet-description col">
+                    <div class="planet-navbar row">
+                        <div class="active planet-nav-item" onclick="showPlanetInfo(this);">Moon</div>
+                        <div class="planet-nav-item" onclick="showPlanetInfo(this);">Mars</div>
+                        <div class="planet-nav-item" onclick="showPlanetInfo(this);">Europa</div>
+                        <div class="planet-nav-item" onclick="showPlanetInfo(this);">Titan</div>
+                    </div>
+
+                    <h1 id="planet-name">MOON</h1>
+                    <p id="planet-desc">See our planet as you’ve never seen it before. A perfect relaxing trip away to
+                        help
+                        regain perspective and come back refreshed. While you’re there, take in some history
+                        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+                    <div class="row distance-time-info">
+                        <div class="col">
+                            <h3>AVG. DISTANCE</h3>
+                            <h2 id="planet-distance">384,400 km</h2>
+                        </div>
+                        <div class="col">
+                            <h3>AVG. TRAVEL TIME</h3>
+                            <h2 id="planet-travel-time">9 MONTHS</h2>
+                        </div>
+                    </div>
+                </div>
+        </article>
+
+
+
+    </div>
+    </div>
+    </div>
+
+
+    <script src="destination.js"></script>
+
+
+</body>
+
+</html>

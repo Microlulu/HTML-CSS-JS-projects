@@ -1,0 +1,522 @@
+@import url("responsive.css"); /* Using a url */
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    h1{
+      font-size: 4em;
+    }
+  
+    .line{
+      display: none;
+    }
+    .text-content {
+      width: 100%;
+      height: 40%;
+      margin: 12em;
+      margin-left: 2em;
+      padding-left: 0em;
+   }
+   .logo-wrap{
+      display: none;
+   }
+   .nav {
+      width: 100%;
+      height: 12vh;
+      font-size: 0.8em;
+   }
+   .text-btn-wrap{
+      flex-direction: column;
+   }
+   .btn-explore{
+      margin-left: 27%;
+      margin-bottom: 15%;
+   }
+   .page-content{
+    width: 100%;
+   }
+   article{
+    margin-left: 0em;
+   }
+   #pick{
+    font-size: 1.2em;
+    margin-left: 1.2em;
+   }
+   .planet-navbar {
+    width: 80%;
+    margin: 0 5% 0 10%;
+    height: 2em;
+  }
+  .distance-time-info {
+    width: 80%;
+    margin: 0% 7% 0 10%;
+    margin-top: 8%;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+.planet-description p {
+    width: 80%;
+    margin: 0% 5% 0 10%;
+}
+.distance-time-info h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+   #planet-name{
+    font-size: 2.6em;
+   }
+   .planet-wrap{
+    flex-direction: column;
+   }
+   .planet-wrap img{
+    margin: 0 auto 50px auto;
+   }
+   #transrow{
+    flex-direction: column;
+   }
+   .crew-member{
+    font-size: 2em;
+   }
+   .crew-info{
+    width: 100%;
+   }
+   .guys{
+    margin-left: 30%;
+    height: 0%;
+   }
+   body{
+    height: 100%;
+   }
+   #titlecrew{
+    font-size: 1.5em;
+    margin-left: 6%;
+   }
+   .crewcenter{
+    width: 75%;
+   }
+   .technology-content{
+    flex-direction: column;
+   }
+   .col-text {
+    width: 100%;
+    margin-left: 5%;
+    justify-content: flex-start;
+}
+#title-tech{
+    margin-left: 2%;
+}
+.technology-info {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 1em;
+}
+  }
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) and (min-width:321px){
+  h1{
+    font-size: 4.6em;
+  }
+
+  .line{
+    display: none;
+  }
+  .text-content {
+    width: 100%;
+    height: 40%;
+    margin : 12em auto;
+    margin-left: 2.4em;
+    padding-left: 0em;
+ }
+ .logo-wrap{
+    display: none;
+ }
+ .nav {
+    width: 100%;
+    height: 12vh;
+    font-size: 0.8em;
+ }
+ .text-btn-wrap{
+    flex-direction: column;
+    justify-content: center;
+ }
+ .btn-explore{
+    margin-left: 38%;
+    margin-bottom: 15%;
+ }
+ .page-content{
+    width: 100%;
+   }
+   article{
+    margin-left: 0em;
+   }
+   #pick{
+    font-size: 1.2em;
+    margin-left: 2em;
+   }
+   .planet-navbar {
+    width: 80%;
+    margin: 0 5% 0 10%;
+    height: 2em;
+  }
+  .distance-time-info {
+    width: 80%;
+    margin: 0% 7% 0 10%;
+    margin-top: 8%;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+.planet-description p {
+    width: 80%;
+    margin: 0% 5% 0 10%;
+}
+.distance-time-info h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+   #planet-name{
+    font-size: 3.4em;
+    margin: 0 auto 0 26%;
+   }
+   .planet-wrap{
+    flex-direction: column;
+   }
+   .planet-wrap img{
+    margin: 0 auto 50px auto;
+   }
+   #transrow{
+    flex-direction: column;
+   }
+   .crew-member{
+    font-size: 2em;
+   }
+   .crew-info{
+    width: 100%;
+   }
+   .guys{
+    margin-left: 30%;
+    height: 0%;
+   }
+body{
+    height: 100%;
+}
+   #titlecrew{
+    font-size: 1.5em;
+    margin-left: 6%;
+   }
+   .crewcenter{
+    width: 80%;
+    margin: 3% 0 0 10%;
+   }
+   .technology-content{
+    flex-direction: column;
+   }
+   .col-text {
+    width: 100%;
+    margin-left: 5%;
+    justify-content: flex-start;
+} 
+   #title-tech{
+    margin-left: 6%;
+}
+.technology-info {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 1em;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:767px) {
+    .line{
+        display: none;
+    }
+    .logo-wrap{
+        display: none;
+    }
+    .text-content {
+        width: 100%;
+        height: 40%;
+        margin : 12em auto;
+        margin-left: 4em;
+        padding-left: 0em;
+     }
+    .nav {
+        width: 100%;
+        height: 12vh;
+        font-size: 1em;
+     }
+     .text-btn-wrap{
+        flex-direction: column;
+        justify-content: center;
+     }
+     .btn-explore{
+        margin-left: 46%;
+        margin-bottom: 15%;
+     }
+     .page-content{
+        width: 100%;
+       }
+       article{
+        margin-left: 0em;
+       }
+       #pick{
+        font-size: 2em;
+        margin-left: 2em;
+       }
+       .planet-navbar {
+        width: 80%;
+        margin: 0 5% 0 10%;
+        height: 2em;
+        font-size: 2em;
+      }
+    
+      .distance-time-info {
+        width: 80%;
+        margin: 0% 7% 0 10%;
+        margin-top: 8%;
+        border-top: 1px solid rgb(179, 179, 179);
+    }
+    .planet-description p {
+        width: 80%;
+        margin: 0% 5% 0 10%;
+    }
+    .distance-time-info h2 {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 2em;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        margin-top: 0;
+    }
+       #planet-name{
+        font-size: 6em;
+       }
+       .planet-wrap{
+        flex-direction: column;
+       }
+       .planet-wrap img{
+        margin: 0 auto 50px auto;
+       }
+       #transrow{
+        flex-direction: column;
+       }
+       .crew-member{
+        font-size: 2em;
+       }
+       .crew-info{
+        width: 100%;
+       }
+       .guys{
+        margin-left: 30%;
+        height: 0%;
+       }
+    body{
+        height: 100%;
+    }
+       #titlecrew{
+        font-size: 2em;
+        margin-left: 6%;
+       }
+       .crewcenter{
+        width: 80%;
+        margin: 3% 0 0 10%;
+       }
+       .technology-content{
+        flex-direction: column;
+       }
+       .col-text {
+        width: 100%;
+        margin-left: 5%;
+        justify-content: flex-start;
+    } 
+       #title-tech{
+        margin-left: 6%;
+    }
+    .technology-info {
+        font-family: 'Barlow Condensed', sans-serif;
+        color: white;
+        font-size: 1em;
+        line-height: 2em;
+        letter-spacing: 0.5px;
+        width: 80%;
+        margin-bottom: 5%;
+        margin-left: 1em;
+    }
+    #technology-img{
+        margin: 0 10%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .line{
+        display: block;
+    }
+    .logo-wrap{
+        display: block;
+    }
+  .text-content {
+    width: 60%;
+  }
+  .text-btn-wrap{
+    flex-direction: row;
+    justify-content: center;
+ }
+ .btn-explore{
+    margin: 40% 0 0 8%;
+ }
+  .background_box{
+    height: 100%;
+  }
+  .nav{
+    height: 12vh;
+  }
+ h1{
+    font-size: 5.7em;
+ }
+ body{
+    height: 100%;
+ }
+ .page-content{
+    width: 100%;
+   }
+   article{
+    margin-left: 0em;
+   }
+   #pick{
+    font-size: 2em;
+    margin-left: 2em;
+   }
+   .planet-navbar {
+    width: 80%;
+    margin: 0 5% 0 10%;
+    height: 2em;
+    font-size: 2em;
+  }
+
+  .distance-time-info {
+    width: 80%;
+    margin: 0% 7% 0 10%;
+    margin-top: 8%;
+    border-top: 1px solid rgb(179, 179, 179);
+}
+.planet-description p {
+    width: 80%;
+    margin: 0% 5% 0 10%;
+}
+.distance-time-info h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+   #planet-name{
+    font-size: 7em;
+   }
+   .planet-wrap{
+    flex-direction: column;
+   }
+   .planet-wrap img{
+    width: 42%;
+    margin: 0 auto 50px 27%;
+   }
+   #titlecrew{
+    font-size: 2em;
+    margin-left: 6%;
+   }
+   .right-col {
+    width: 70%;
+    height: 100%;
+    margin: 0 2% 20% 0;
+}
+.technology-content{
+    flex-direction: column;
+   }
+   .col-text {
+    width: 100%;
+    margin-left: 5%;
+    justify-content: flex-start;
+} 
+   #title-tech{
+    margin-left: 6%;
+}
+.technology-info {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: 1em;
+}
+#technology-img{
+    margin: 0 23%;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .nav{
+        height: 7vh;
+      }
+
+      body{
+        height: 100%;
+     }
+     .planet-wrap img{
+        width: 100%;
+        margin: 0 -30%;
+       }
+       #planet-name{
+        font-size: 8.2em;
+       }
+       .planet-description p {
+        width: 70%;
+        margin: 0% 2% 0 25%;
+    }
+    #titlecrew{
+        font-size: 2em;
+        margin-left: 6%;
+       }
+       .right-col {
+        width: 70%;
+        height: 100%;
+        margin: 0 1% 20% 0;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav{
+        height: 10vh;
+      }
+    .btn-explore{
+        margin-top: 25%;
+    }
+    body{
+        height: 100%;
+    }
+}

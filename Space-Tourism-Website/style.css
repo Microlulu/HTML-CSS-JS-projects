@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* ----BACKGROUND INDEX PAGE ----*/
+.mainpagebody{
+    background-image: url(starter-code/assets/home/background-home-desktop.jpg);
+}
+
+
+/* ---- BEGIN SHARED CSS ----*/
+.nav{
+    text-transform: uppercase;
+    color: rgba(142, 142, 142, 0.224);
+    background-color: rgba(175, 175, 175, 0.251);
+    width: 55%;
+    height: 10vh;
+    display: block;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1em;
+    backdrop-filter: blur(10px);
+  
+}
+
+.accent-number{
+    font-weight: bold;
+    color:#999999;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    letter-spacing: 1.5px;
+    display: block;
+    padding : 4%;
+
+}
+.nav>a:hover{
+    
+    border-bottom:white 5px solid;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ----END SHARED CSS ----*/
+
+/* ----BEGIN INDEX PAGE ----*/
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+.text-content{
+    width: 40%;
+    height: 40%;
+    margin: 12em;
+    margin-left: 5em;
+    padding-left: 7em;
+
+
+}
+
+
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 9em;
+    font-family: 'Bellefair', serif;
+    font-weight: 500;
+    text-align: justify;
+    letter-spacing: 0.14em;
+    margin: 7% 0;
+
+}
+
+h2{
+    
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.7em;
+    text-align: justify;
+    letter-spacing: 0.2em;
+
+}
+
+h3{
+    font-size: medium;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    
+}
+
+p{
+    
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    
+
+}
+
+.btn-explore{
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    margin-top: 18%;
+}
+
+.btn-explore:hover{
+    background-color: rgba(255, 255, 255, 0.631);
+    transition: 1s;
+}
+
+.btn-explore>a{
+    text-decoration: none;
+
+}
+
+.logo-wrap{
+    width: 3em ;
+    margin-top: 1.5%;
+    margin-left: 1%;
+}
+
+.header{
+    margin: 2% 0;
+
+
+}
+
+.line{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.476);
+    width: 50%;
+    height: 20px;
+    margin: 1.5% 0 0 3%;
+
+}
+
+.text-btn-wrap{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ----END INDEX CSS ----*/
+
+
+
+/* ----DESTINATION PAGE ----*/
+
+.destinationbody{
+    background-image: url(starter-code/assets/destination/background-destination-desktop.jpg);
+
+}
+
+.background-box{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content{
+    width: 85%;
+    margin: 5% auto;
+}
+
+.planet-navbar{
+    width: 60%;
+    margin: 0 10% 0 25%;
+    height: 2em;
+
+}
+
+article{
+padding-top:10%;
+margin-left: 10em;
+}
+
+
+.planet-navbar div{
+    color: rgb(179, 179, 179);
+    font-family: 'Bebas Neue', cursive;
+    width: fit-content;
+    letter-spacing: 1.5px;
+    font-size:1.2em;
+    display: block;
+    padding-bottom: 25px;
+}
+
+.planet-navbar:hover{
+    cursor: pointer;
+}
+
+.planet-wrap img{
+     width: 100%;
+    height: auto;
+}
+
+.planet-wrap{
+    display: flex;
+    flex-direction: row;
+}
+.active{
+    border-bottom: 3px solid rgb(179, 179, 179);
+    border-radius: 10%;
+    
+    
+}
+
+
+
+.planet-description h1{
+ width: 60%;
+ margin: 2% 7% 0 25%;
+ font-size: 9.6em;
+
+}
+
+.planet-description p{
+    width: 60%;
+    margin: 0% 7% 0 25%;
+}
+
+
+.distance-time-info{
+    width: 60%;
+    margin: 0% 7% 0 25%;
+    margin-top: 5%;
+    border-top: 1px solid rgb(179, 179, 179);;
+
+}
+
+
+.distance-time-info h3{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+}
+
+.distance-time-info h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+
+/* END DESTINATION PAGE */
+
+/* BEGIN CREW PAGE */
+
+.crewpagebody{
+    background-image: url("starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.right-col{
+    width: 50%;
+    height: 100%;
+    margin : -1% 0 0 15%
+    
+}
+
+
+
+.crewcenter{
+    width: 60%;
+    margin: 3% 0 0 15%;
+}
+
+
+.job-title{
+    font-family: 'Bellefair', serif;
+    color: #999999;
+
+}
+
+.guys{
+
+    width: 100%;
+    height: 445px;
+
+}
+
+.crew-info{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: lightslategrey;
+    font-size: 19px;
+    width: 70%;
+    line-height: 32px;
+    font-weight: 100;
+   
+ 
+}
+
+.crew-member{
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin: 3% 0;
+}
+
+.clicky-navbar{
+width: 200px;
+margin: 10% 0;
+
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #999999;
+}
+
+.dot.active{
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*---------END CREW CSS--------*/
+
+/*---------BEGIN TECHNOLOGY CSS--------*/
+
+.technology-body{
+background-image: url(starter-code/assets/technology/background-technology-desktop.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.nav-number{
+    font-family: 'Bellefair', serif;
+    font-size: 1.5em;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(128, 128, 128, 0.517);
+    box-sizing: border-box;
+    border-radius: 50%;width: fit-content;
+    padding: 12px 25px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 400;
+    line-height: 36.37px;
+    text-align: center;
+    
+
+}
+
+.col-numbers{
+    height: 400px;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.col-text{
+    width: 50%;
+    justify-content: flex-start;
+
+
+}
+
+.col-text h1{
+    font-size: 3em;
+    line-height: 2em;
+    font-family: 'Bellefair', serif;
+    margin-top: 0;
+    margin-left: 0.3em;
+
+
+}
+
+.col-text h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    margin-top: 7%;
+    margin-left: 1em;
+    
+
+}
+
+.technology-info{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    width: 70%;
+    margin-left: 1em;
+
+
+}
+.col-images{
+    width: 50%;
+
+
+}
+
+
+.technology-content{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.col-text,.col-numbers{
+    margin-top: 7%;
+
+}
+
+.techdot{
+    background-color: rgba(255, 255, 255, 0.387);
+}
+
+    /*---------END TECHNOLOGY CSS--------*/
