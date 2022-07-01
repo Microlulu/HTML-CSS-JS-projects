@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das sind wir</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="main_container">
+    <div class="container">
+        <section class="titles">
+            <div class="row">
+                <img src="assets/images/arrow-big.svg" alt="arrow" width="60" id="arrow">
+                <h1 class="h1">Das sind wir</h1>
+            </div>
+            <h2><a id="link1" href="">| Darum geht's</a></h2>
+            <h2><a id="link2" href="">| Unsere Arbeit</a></h2>
+            <h2><a id="link3" href="">| Nachhaltige Erfolge</a></h2>
+        </section>
+        <section class="text">
+            <p id="para">Animal Society ist eine gemeinnützige Organisation, die sich für die Rechte und Interessen von Tieren
+                einsetzt und Gesellschalf un Politik dazy ermutigt, Tierleid zu beenden.
+                Mit unserer Aufklärungarbeit und politischen Kampagnen schaffen wir Tranzparenz, um effektive
+                Tierpolitik zu
+                etablieren.
+                Unsere Vision ist eine Welt, in der alle Tiereund deren Rechte als Teil einer gerechten Gesellschalf
+                respektiert und geschützt werden.
+            <p>
+                <div id="btns">
+                <button class="dark_btn"><a href="">mitglied werden</a></button>
+                <button class="light_btn"><a href="">Spenden schenken</a></button>
+                </div>
+        </section>
+    </div>
+    <div class="small_footer">
+        <div class="small_bloc_footer">
+            <h3>was</h3>
+            <p class="small_footer_txt">gemeinnützige Organisation</p>
+        </div>
+        <div class="small_bloc_footer">
+            <h3>Für wen</h3>
+            <p class="small_footer_txt">Für die Recte und Interessen von Tieren</p>
+        </div> 
+        <div class="small_bloc_footer">
+            <h3>unser ziel</h3>
+            <p class="small_footer_txt">Eine Gesellschalf un Politik die Tierleid beendet</p>
+        </div>
+        <div class="small_bloc_footer">
+            <h3>unsere vision</h3>
+            <p class="small_footer_txt">Eine Welt, welche alle Tiere und deren Rechte respektiert</p>
+        </div>
+        <div class="small_bloc_footer">
+            <h3>wer</h3>
+            <p class="small_footer_txt">Thomas, Steffi, Paul, Kathrin... <div class="purple_txt">und Du?</div></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("link1").onclick=writeData1;
+        function writeData1()
+        {
+            document.getElementById("para").innerHTML="Changed Paragraph Content 1";
+            return false;
+        }
+        document.getElementById("link2").onclick=writeData2;
+        function writeData2()
+        {
+            document.getElementById("para").innerHTML="Changed Paragraph Content 2";
+            return false;
+        }
+        document.getElementById("link3").onclick=writeData3;
+        function writeData3()
+        {
+            document.getElementById("para").innerHTML="Changed Paragraph Content 3";
+            return false;
+        }
+    </script>
+</body>
+
+</html>

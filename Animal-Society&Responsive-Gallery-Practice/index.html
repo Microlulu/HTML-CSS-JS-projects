@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Society</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <ul id="upper_nav" class="row">
+                <li class="upper_nav_links"><a href="">Podcast Tier & jetzt</a></li>
+                <li class="upper_nav_links"><a href="">Englisch</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div id="logo" class="row">
+                <img class="logo" src="/assets/images/logo_animal.png" alt="Logo">
+                <div id="logo-txt" class="col">
+                    <label class="logo_txt">Animal</label>
+                    <label class="logo_txt">Society</label>
+                </div>
+            </div>
+            <ul class="nav" id="myTopnav">
+                <li class="active"><a href="">Über uns</a></li>
+                <li><a href="">Aktuelles</a></li>
+                <li><a href="">Aktiv werden</a></li>
+                <li><a href="">Kampagnen & Petitionen</a></li>
+                <li><a href="">Tierschutz & Recht</a></li>
+                <li><a href="">Parteibeobachtung</a></li>
+                <li><a href="">Die Tiere</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="burgerToggle()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </nav>
+    </header>
+    <div class="row" id="col">
+        <section id="section" class="col info_txt">
+            <h1>Lücken in der <span>Tierschutzpolitik</span> schließen.</br>
+                Für eine Stimme der Tire in Recht und Gesellschalf.
+            </h1>
+            <br>
+            <p><b>Seit Jarzehntrn ignoriert die Bundesregierung den gesellschalflichen Wunsch nach mehr Tierschutz.</b>
+                Um den tierfeindlichen Lobbyismus zu stoppen, ist eune Herauslösung des Tierschutzes aus dem
+                Bundesministerium für Ernährung und Landwirtschaft dringend notwendig.
+                <b>Wir brauchen Deine Stimme zur Einführung eines Tierschutzbeauftragten im Bundesttag.</b>
+            </p>
+            <div class="bottom_links">
+                <div id="links-btn">
+                <button class="orange_btn"><img class="megaphone" src="assets/images/megaphone.svg" alt="megaphone" width="42">
+                    <a href="">petition unterschreiben</a></button>
+                <a class="kampagnen" href=""><img src="assets/images/arrow-small.svg" alt="arrow" width="15"> Unsere
+                    Kampagnen</a>
+                </div>    
+            </div>
+        </section>
+        <section id="section_img" class="col">
+            <div class=" purple-one">
+            <div class="purple"></div>
+        
+            <img class="pig" src="assets/images/hero-image.png" alt="pig">
+            <div class="white_small"></div>
+            <div class="small_box">
+                <p class="grey">Mitglied werden</p>
+                <div class="row align">
+                    <img src="assets/images/profile_img.webp" alt="profil" width="35">
+                    <img src="assets/images/profile_img.webp" alt="profil" width="35">
+                    <img src="assets/images/profile_img.webp" alt="profil" width="35">
+                    <img src="assets/images/profile_img.webp" alt="profil" width="35">
+                    <div class="rounded_img_small">+43</div>
+                </div>
+            </div>
+        </div>
+            <img class="wave" src="assets/images/doublewave.svg" alt="wave" width="150">
+
+            <div class="small_box_two">
+                <p class="grey">Spenden lorem ipsum</p>
+                <div class="row">
+                    <p class="light_grey">0</p>
+                    <p class="black">43.000€</p>
+                </div>
+                <progress value="70" max="100"></progress>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+    <div class="footer-main">
+        <img src="assets/images/pig.svg" alt="pig" width="150" id="pig_footer">
+        <div class="bloc_footer">
+            <h4>1.25 Mio</h4>
+            <p class="footer_txt">Tiere leiden täglich unter grausamen</p>
+            <p class="footer_txt">Bedingungen in der Massentierhaltung</p>
+        </div>
+    </div>
+    <div class="footer-main">
+        <img src="assets/images/rights.svg" alt="rights" width="120">
+        <div class="bloc_footer">
+            <h4>2392</h4>
+            <p class="footer_txt">Tiere leiden täglich unter grausamen</p>
+            <p class="footer_txt">Bedingungen in der Massentierhaltung</p>
+        </div>
+    </div>
+    <div class="footer-main">
+        <img src="assets/images/megaphone.svg" alt="shield" width="120">
+        <div class="bloc_footer">
+            <h4>17</h4>
+            <p class="footer_txt">Nur alle 17 Jahre wird im Schnitt</p>
+            <p class="footer_txt">ein Tierhaltungsbetrieb kontrolliert</p>
+        </div>
+    </div>
+    </footer>
+    <script>
+
+/* NAVBAR PRINCIPALE  : MENU BURGER TOGGLE */
+function burgerToggle() {
+    let x = document.getElementById("myTopnav");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+        </script>
+        
+</body>
+
+</html>
