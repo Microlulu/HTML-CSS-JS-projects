@@ -15,6 +15,9 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
 /* ----BACKGROUND INDEX PAGE ----*/
 .mainpagebody{
     background-image: url(starter-code/assets/home/background-home-desktop.jpg);
@@ -150,6 +153,7 @@ p{
 
 .btn-explore>a{
     text-decoration: none;
+    color: black;
 
 }
 
@@ -186,8 +190,8 @@ p{
 /* ----DESTINATION PAGE ----*/
 
 .destinationbody{
-    background-image: url(starter-code/assets/destination/background-destination-desktop.jpg);
-
+   background-image: url(starter-code/assets/destination/background-destination-desktop.jpg);
+ width: 100%;
 }
 
 .background-box{
@@ -246,10 +250,8 @@ margin-left: 10em;
 
 
 .planet-description h1{
- width: 60%;
- margin: 2% 7% 0 25%;
- font-size: 9.6em;
-
+ font-size: 8em;
+ margin-left: 25%;
 }
 
 .planet-description p{

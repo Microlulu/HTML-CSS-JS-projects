@@ -30,6 +30,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   height: fit-content;
+  overflow-x: hidden;
 }
 /*TEMPLATE NUMBER 1 "index"*/
 /*responsive not working*/
