@@ -8,6 +8,8 @@ const activeBtn = document.querySelector('.active-btn')
 const completedBtn = document.querySelector('.completed-btn')
 const allBtn = document.querySelector('.all-btn')
 const filters = document.querySelector('.filters')
+let isDark = true;
+
 
 
 // if prefers dark mode:
@@ -191,15 +193,24 @@ function createNewListItemInDom(taskText){
 }
 
 function modifyBk(){
+    let themeButton = document.getElementById("themeButton");
     let mode = body.getAttribute('class')
+    if (isDark == true) {
+        document.getElementById("themeButton").style.backgroundImage = "url(images/icon-sun.svg)";
+        isDark = false;
+    }
+    else {
+        document.getElementById("themeButton").style.backgroundImage = "url(images/icon-moon.svg)";
+        isDark = true;
+    }
     mode == '' ? mode = 'light' : mode = 'dark'
     let iconMode = ""
-    mode == 'dark' ? iconMode = 'sun' : iconMode = 'moon' 
+    mode === 'dark' ? iconMode = 'sun' : iconMode = 'moon' 
     let device = ""
     window.innerWidth > 800 ? device = 'desktop' : device = 'mobile'
     bkImage.setAttribute('src', `./images/bg-${device}-${mode}.jpg`)
-    icon.setAttribute('src', `./images/icon-${iconMode}.svg`)
     icon.setAttribute('alt', `${iconMode} icon`)
+    
     modifyFiltersPosition(device)
 }
 
