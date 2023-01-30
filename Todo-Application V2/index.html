@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Todo App v2</title>
+
+</head>
+<body class="">
+
+  <header>
+    <img class="bk-image" src="" alt="" />
+    <h1>Todo</h1>
+    <img class="icon" src="" alt="" />
+  </header>
+
+  <main>
+    <div class="list-style">
+      <div class="checkbox">
+        <div class="inner-shape"></div>
+      </div>
+      <label  for="new-todo" aria-label="Create a new todo">      
+        <input id="new-todo" class="new-todo" type="text" placeholder="Create a new todo..." />
+      </label>
+    </div>
+    <ul class="tasks-list">
+
+      <li class="list-style list-item checked" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task1"
+      >
+        <div class="checkbox" role="checkbox" aria-checked="true" aria-label="Complete online Javascript course">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>Complete online Javascript course</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon"/>
+        </button>
+      </li>
+
+      <li class="list-style list-item" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task2"
+      >
+        <div class="checkbox" role="checkbox"  aria-checked="false" aria-label="Start a new embroidery">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>Start a new embroidery</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon" />
+        </button>
+      </li>
+
+      <li class="list-style list-item" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task3"
+      >
+        <div class="checkbox" role="checkbox"  aria-checked="false" aria-label="30 minutes meditation">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>30 minutes meditation</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon"/>
+        </button>
+      </li>
+
+      <li class="list-style list-item" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task4"
+      >
+          <div class="checkbox" role="checkbox"  aria-checked="false" aria-label="Read for 2 hours">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>Read for 2 hours</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon"/>
+        </button>
+      </li>
+
+      <li class="list-style list-item" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task5"
+      >
+        <div class="checkbox" role="checkbox"  aria-checked="false" aria-label="Pick up groceries">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>Pick up groceries</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon"/>
+        </button>
+      </li>
+
+      <li class="list-style list-item" 
+      draggable="true" 
+      ondragstart="drag(event)"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="task6"
+      >
+        <div class="checkbox" role="checkbox"  aria-checked="false" aria-label="Complete Todo App for my Mentor">
+          <div class="inner-shape"></div>
+          <img src="./images/icon-check.svg" alt="check symbol"/>
+        </div>
+        <p>Complete Todo App for my Mentor</p>
+        <button class="delete-btn">
+          <img src="./images/icon-cross.svg" alt="cross-icon" />
+        </button>
+      </li>
+
+      <li class="list-style">
+        <p class="items-left"></p>
+        <button class="clear-completed-btn">Clear Completed</button>
+      </li>
+    </ul>
+    <ul class="filters list-style">
+      <li><button class="all-btn active">All</button></li>
+      <li><button class="active-btn">Active</button></li>
+      <li><button class="completed-btn">Completed</button></li>
+    </ul>
+    <p class="explanation-text">Drag and drop to reorder list</p>
+  </main>
+
+  <footer class="attribution">
+    Coded by <a href="https://github.com/Microlulu">Microlulu</a>.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

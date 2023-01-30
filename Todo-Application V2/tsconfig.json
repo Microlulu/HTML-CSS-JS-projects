@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        //"outDir": "build", this line is use to create a new folder with the build in it.
+        "target": "ES6", //ESNext will tells TS to emit code that is compatible with watever the lastest version of JS happen to be.
+        //"noEmit": true, // if using to typechecking and nothing more : noEmit = true, tells TS not to write out anything to disk at all.
+    },
+    "include": ["**.ts"]
+}
