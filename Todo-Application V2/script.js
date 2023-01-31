@@ -66,8 +66,9 @@ function changeMode(eventTarget){
     if (eventTarget == icon){
         body.classList.toggle('dark')
         body.classList.toggle('light')
+        modifyBk()
     }
-    modifyBk()
+    
 }
 
 function filtersClicked(eventTarget){
