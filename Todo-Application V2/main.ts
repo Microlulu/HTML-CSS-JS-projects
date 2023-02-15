@@ -1,54 +1,58 @@
-const bkImage : Element | null = document.querySelector('.bk-image')
-const body : HTMLBodyElement | null = document.querySelector('body')
-const icon : Element | null = document.querySelector('.icon')
-const tasksList : Element | null = document.querySelector('.tasks-list')
-const itemsLeft : Element | null = document.querySelector('.items-left')
-const clearCompletedBtn : Element | null = document.querySelector('.clear-completed-btn')
-const activeBtn : Element | null = document.querySelector('.active-btn')
-const completedBtn : Element | null = document.querySelector('.completed-btn')
-const allBtn : Element | null = document.querySelector('.all-btn')
-const filters : Element | null = document.querySelector('.filters')
-
+const bkImage = document.querySelector('.bk-image')
+const body = document.querySelector('body')
+const icon = document.querySelector('.icon')
+const tasksList = document.querySelector('.tasks-list')
+const itemsLeft = document.querySelector('.items-left')
+const clearCompletedBtn = document.querySelector('.clear-completed-btn')
+const activeBtn = document.querySelector('.active-btn')
+const completedBtn = document.querySelector('.completed-btn')
+const allBtn = document.querySelector('.all-btn')
+const filters = document.querySelector('.filters')
+let isDark: boolean = false;
 
 // if prefers dark mode:
 if (!window.matchMedia || window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark')
+    isDark = true;
 }
 
 // on load determine which picture to choose for background
 modifyBk()
 
 // on load calculate active tasks
-let initialTaskAmount: any = calculateActiveTasks()
-sessionStorage.setItem('id', initialTaskAmount)
+let initialTaskAmount: number = calculateActiveTasks()
+// a string is expected so we have to convert the number
+sessionStorage.setItem('id', initialTaskAmount.toString())
 
 // update background
-window.addEventListener('resize', e=>{
-    modifyBk()
-    modifyFiltersPosition(e)
+window.addEventListener('resize', e =>{
+    console.log('resize event check', e)
+    // TODO: you have to send the device prop here otherwise the function won't work
+    modifyFiltersPosition('')
 })
 
-document.addEventListener('click', e=>{
+document.addEventListener('click', (e: Event) =>{
     // check task as completed/active if clicked
-    checkTaskOnClick(e.target)
+    checkTaskOnClick(e.target as HTMLElement)
     // check if person clicked on delete
-    deleteTaskOnClick(e.target)
+    deleteTaskOnClick(e.target as HTMLElement)
     // check if wants to clear completed
-    clearCompleted(e.target)
+    clearCompleted(e.target as HTMLElement)
     // check if person clicked on filters
-    filtersClicked(e.target)
+    filtersClicked(e.target as HTMLElement)
     // if person clicked to change mode
     changeMode(e.target)
 })
 
-document.addEventListener('keypress', e=>{
-    if (e.key === 'Enter'){
-        let inputField : Element | null = document.querySelector('.new-todo')
+document.addEventListener('keypress', e =>{
+    if (e.key === 'Enter') {
+        // You have to use the HTMLInputElement type here because Elements don't have values
+        let inputField: HTMLInputElement | null = document.querySelector('.new-todo')
         let taskText = ""
-        if(this.inputField.value.length > 0){
-            taskText = this.inputField.value
+        if(inputField.value.length > 0){
+            taskText = inputField.value
             createNewListItemInDom(taskText)
-            this.inputField.value = ""
+            inputField.value = ""
         }
         // recalculate active tasks
         calculateActiveTasks()
@@ -60,15 +64,16 @@ document.addEventListener('keypress', e=>{
 
 
 
-function changeMode(eventTarget){
+function changeMode(eventTarget: EventTarget){
     if (eventTarget == icon){
-        this.body.classList.toggle('dark')
-        this.body.classList.toggle('light')
+        console.log('Click');
+        body.classList.toggle('dark')
+        body.classList.toggle('light')
+        modifyBk()
     }
-    modifyBk()
 }
 
-function filtersClicked(eventTarget){
+function filtersClicked(eventTarget: HTMLElement){
     if (eventTarget.closest('ul') == filters){
         if (eventTarget == activeBtn || 
             eventTarget == completedBtn || 
@@ -78,9 +83,9 @@ function filtersClicked(eventTarget){
     }
 }
 
-function filter(filterBtn){
-    let previousActiveFilter : Element | null = document.querySelector('.active')
-    this.previousActiveFilter.classList.remove('active')
+function filter(filterBtn: Element){
+    let previousActiveFilter = document.querySelector('.active')
+    previousActiveFilter.classList.remove('active')
     // unhide all hidden tasks
     let tasksToUnhide = document.querySelectorAll('.hidden')
     tasksToUnhide.forEach( task =>{
@@ -111,15 +116,15 @@ function filter(filterBtn){
     }   
 }
 
-function checkTaskOnClick(eventTarget){
+function checkTaskOnClick(eventTarget: HTMLElement){
     if (eventTarget.closest('ul') == tasksList){
         let allTasks = document.querySelectorAll('.list-item')
         allTasks.forEach(task =>{
             if (eventTarget.closest('li') == task){
                 task.classList.toggle('checked')
-                let ariaStatus = this.task.firstElementChild.getAttribute('aria-checked')
+                let ariaStatus = task.firstElementChild.getAttribute('aria-checked')
                 ariaStatus == 'true' ? ariaStatus = 'false' : ariaStatus = 'true'
-                this.task.firstElementChild.setAttribute('aria-checked', ariaStatus)
+                task.firstElementChild.setAttribute('aria-checked', ariaStatus)
             }
         })
         // recalculate active tasks
@@ -132,11 +137,14 @@ function checkTaskOnClick(eventTarget){
 
 function calculateActiveTasks(){
     let activeTasks = document.querySelectorAll('.list-item:not(.checked)').length
-    this.itemsLeft.innerText = `${activeTasks} items left`
+    // itemsLeft.innerText = `${activeTasks} items left`
+    if (itemsLeft) {
+        itemsLeft.innerHTML = `${activeTasks} items left`
+    }
     return activeTasks
 }
 
-function deleteTaskOnClick(eventTarget){
+function deleteTaskOnClick(eventTarget: HTMLElement){
     let closestBtn = eventTarget.closest('button')
     if (closestBtn && closestBtn.classList.contains('delete-btn')){
         closestBtn.parentElement.remove()
@@ -144,8 +152,8 @@ function deleteTaskOnClick(eventTarget){
    calculateActiveTasks()
 }
 
-function clearCompleted(eventTarget){
-    if (eventTarget == clearCompletedBtn){
+function clearCompleted(eventTarget: HTMLElement){
+    if (eventTarget === clearCompletedBtn){
         let checkedTasks = document.querySelectorAll('.checked')
         checkedTasks.forEach(task =>{
             task.remove()
@@ -153,10 +161,10 @@ function clearCompleted(eventTarget){
     }
 }
 
-function createNewListItemInDom(taskText){
-    let newId = this.sessionStorage.getItem('id') + 1
+function createNewListItemInDom(taskText: string){
+    let newId = sessionStorage.getItem('id') + 1
     sessionStorage.setItem('id', newId)
-    let newListItem = document.createElement('li')
+    let newListItem: HTMLLIElement = document.createElement('li')
     newListItem.classList.add('list-style')
     newListItem.classList.add('list-item')
     newListItem.setAttribute('draggable', 'true')
@@ -187,44 +195,54 @@ function createNewListItemInDom(taskText){
     newListItem.appendChild(checkbox)
     newListItem.appendChild(p)
     newListItem.appendChild(button)
-    this.tasksList.insertBefore(newListItem, this.tasksList.firstChild)
+    tasksList.insertBefore(newListItem, tasksList.firstChild)
 }
 
 function modifyBk(){
-    let mode = this.body.getAttribute('class')
-    mode == '' ? mode = 'light' : mode = 'dark'
+    let mode = body.getAttribute('class')
+    if (isDark == true) {
+        document.getElementById("themeButton").style.backgroundImage = "url(images/icon-sun.svg)";
+        isDark = false;
+    }
+    else {
+        document.getElementById("themeButton").style.backgroundImage = "url(images/icon-moon.svg)";
+        isDark = true;
+    }
+    mode === '' ? mode = 'light' : mode = 'dark'
     let iconMode = ""
-    mode == 'dark' ? iconMode = 'sun' : iconMode = 'moon' 
+    mode === 'dark' ? iconMode = 'sun' : iconMode = 'moon' 
     let device = ""
     window.innerWidth > 800 ? device = 'desktop' : device = 'mobile'
-    this.bkImage.setAttribute('src', `./images/bg-${device}-${mode}.jpg`)
-    this.icon.setAttribute('src', `./images/icon-${iconMode}.svg`)
-    this.icon.setAttribute('alt', `${iconMode} icon`)
+    bkImage.setAttribute('src', `./images/bg-${device}-${mode}.jpg`)
+    icon.setAttribute('alt', `${iconMode} icon`)
+    
     modifyFiltersPosition(device)
 }
 
-function  modifyFiltersPosition(device){
-    let containerToAppendFilters
+function modifyFiltersPosition(device: string){
+    let containerToAppendFilters: HTMLElement
     if (device == 'desktop'){
         containerToAppendFilters = document.querySelector('.tasks-list .list-style:not(.list-item)')
-        this.filters.classList.remove('list-style')
-        containerToAppendFilters.insertBefore(filters, containerToAppendFilters.lastElementChild)
+        filters.classList.remove('list-style')
+        // TODO: is this necessary?
+        // containerToAppendFilters.insertBefore(filters, containerToAppendFilters.lastElementChild)
     } 
     if (device == 'mobile'){
         containerToAppendFilters = document.querySelector('main')
-        this.filters.classList.add('list-style')
-        containerToAppendFilters.insertBefore(filters, containerToAppendFilters.lastElementChild)
+        filters.classList.add('list-style')
+        // TODO: is this necessary?
+        // containerToAppendFilters.insertBefore(filters, containerToAppendFilters.lastElementChild)
     }
 }
 
 // drag and drop item
-function allowDrop(ev) {
+function allowDrop(ev: Event) {
     ev.preventDefault();
 }
-  
-function drag(ev) {
+
+function drag(ev: DragEvent) {
     let allTasks = document.querySelectorAll('.list-item')
-    ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text", (ev.target as HTMLDivElement).id);
     document.addEventListener('drag', (event) => {
         allTasks.forEach(task=>{
             let heightDifference = event.clientY - task.getBoundingClientRect().top
@@ -239,10 +257,10 @@ function drag(ev) {
     })
 }
 
-function drop(ev) {
+function drop(ev: DragEvent) {
     ev.preventDefault();
     var dragedItemId = ev.dataTransfer.getData("text");
-    let draggedItem = document.querySelector(`#${dragedItemId}`)
-    ev.target.closest('li').parentElement.insertBefore(draggedItem, ev.target.closest('li'));
-    this.document.querySelector('.add-draged-item-ontop').classList.remove('add-draged-item-ontop')
+    let draggedItem = document.querySelector(`#${dragedItemId}`);
+    (ev.target as HTMLDivElement).closest('li').parentElement.insertBefore(draggedItem, (ev.target as HTMLDivElement).closest('li'));
+    document.querySelector('.add-draged-item-ontop').classList.remove('add-draged-item-ontop')
 }
