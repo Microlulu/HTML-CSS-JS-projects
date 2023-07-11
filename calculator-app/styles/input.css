@@ -1,0 +1,90 @@
+
+
+input[type=range] {
+    height: 34px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 0;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]::-webkit-slider-thumb {
+    background-color: var(--key-two-primary);
+    margin-top: 5px;
+    height: 16px;
+    width: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]::-webkit-slider-thumb:active {
+    background-color: var(--key-two-tertiary);
+
+  }
+  input[type=range]::-moz-range-track {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: var(--key-two-primary);
+    height: 16px;
+    width: 16px;
+    border-radius: 15px;
+    border: transparent;
+    cursor: pointer;
+  }
+
+  input[type=range]::-moz-range-thumb:active {
+    background-color: var(--key-two-tertiary);
+  }
+
+  input[type=range]::-ms-track {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]::-ms-fill-lower {
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]::-ms-fill-upper {
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]::-ms-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 15px;
+    background-color: var(--key-two-primary);
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-thumb:active {
+    background-color: var(--key-two-tertiary);
+  }
+
+
+  input[type=range]:focus::-ms-fill-lower {
+    background-color: var(--bg-secondary);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background-color: var(--bg-secondary);
+  }

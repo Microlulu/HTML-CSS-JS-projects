@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/input.css">
+  <link rel="stylesheet" href="styles/elements.css">
+  <link rel="stylesheet" href="styles/themes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">  <title>Calculator app</title>
+  <style>
+    .attribution a {
+      color: hsl(228, 59%, 20%);
+    }
+  </style>
+</head>
+
+<body data-theme="1">
+  <div class="container">
+  <header>
+    <div class="headline">
+    <div class="headline_title">My calculator</div>
+    <div class="headline_themepicker">
+      <div class="headline_themepicker--description">
+        CHOOSE YOUR THEME
+      </div>
+      <div class="headline_themepicker--container">
+        <div class="headline_themepicker--themenumbers">
+          <div>
+            1
+          </div>
+          <div>
+            2
+          </div>
+          <div>
+            3
+          </div>
+        </div>
+        <input id="slider" type="range" min="1" max="3" value="1">
+      </div>
+    </div>
+  </div>
+  </header>
+  <div class="calculator">
+    <div class="screen" id="screen">
+        </div>
+        <div class="keyboard">
+          <button onclick="input('7')">
+            7
+          </button>
+          <button onclick="input('8')">
+            8
+          </button>
+          <button onclick="input('9')">
+            9
+          </button>
+          <button id="del" onclick="del()">
+            DEL
+          </button>
+          <button onclick="input('4')">
+            4
+          </button>
+          <button onclick="input('5')">
+            5
+          </button>
+          <button onclick="input('6')">
+            6
+          </button>
+          <button onclick="operator('+')">
+            +
+          </button>
+          <button onclick="input('1')">
+            1
+          </button>
+          <button onclick="input('2')">
+            2
+          </button>
+          <button onclick="input('3')">
+            3
+          </button>
+          <button onclick="operator('-')">
+            -
+          </button>
+          <button onclick="input('.')">
+            .
+          </button>
+          <button onclick="input('0')">
+            0
+          </button>
+          <button onclick="operator('/')">
+            /
+          </button>
+          <button onclick="operator('*')">
+            x
+          </button>
+          <button id="reset" onclick="reset()">
+            RESET
+          </button>
+          <button id="equals" onclick="calc()">
+            =
+          </button>
+        </div>
+  </div>
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Microlulu">Mircolulu</a>.
+  </div>
+
+</body>
+
+<script src="js/script.js"></script>
+</html>

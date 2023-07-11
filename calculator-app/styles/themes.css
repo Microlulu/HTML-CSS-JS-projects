@@ -1,0 +1,70 @@
+[data-theme="1"] {
+    --bg-primary: hsl(222, 26%, 31%);
+    --bg-secondary: hsl(223, 31%, 20%);
+    --bg-tertiary:  hsl(224, 36%, 15%);
+
+    --key-one-primary: hsl(225, 21%, 49%);
+    --key-one-secondary: hsl(224, 28%, 35%);
+    --key-one-tertiary: hsla(224, 51%, 76%, 1);
+
+    --key-two-primary: hsl(6, 63%, 50%);
+    --key-two-secondary: hsl(6, 70%, 34%);
+    --key-two-tertiary: hsla(6, 93%, 67%, 1);
+
+    --key-three-primary: hsl(30, 25%, 89%);
+    --key-three-secondary: hsl(28, 16%, 65%);
+    --key-three-tertiary: hsla(31, 100%, 100%, 1);
+
+
+    --text-head: hsl(0, 0%, 100%);
+    --text-primary: hsl(221, 14%, 31%);
+    --text-secondary: hsl(0, 0%, 100%);
+    --text-tertiary: hsl(0, 0%, 100%);
+}
+
+[data-theme="2"] {
+    --bg-primary: hsl(0, 0%, 90%);
+    --bg-secondary: hsl(0, 5%, 81%);
+    --bg-tertiary:  hsl(9, 1%, 93%);
+
+    --key-one-primary: hsl(185, 42%, 37%);
+    --key-one-secondary: hsl(185, 58%, 25%);
+    --key-one-tertiary: hsla(184, 40%, 56%, 1);
+
+    --key-two-primary: hsl(25, 98%, 40%);
+    --key-two-secondary: hsl(25, 99%, 27%);
+    --key-two-tertiary: hsla(25, 100%, 61%, 1);
+
+    --key-three-primary: hsl(45, 7%, 89%);
+    --key-three-secondary: hsl(35, 11%, 61%);
+    --key-three-tertiary: hsla(0, 0%, 100%, 1);
+
+    --text-head: hsl(60, 10%, 19%);
+    --text-primary: hsl(60, 10%, 19%);
+    --text-secondary: hsl(0, 0%, 100%);
+    --text-tertiary: hsl(0, 0%, 100%);
+}
+
+[data-theme="3"] {
+    --bg-primary: hsl(268, 75%, 9%);
+    --bg-secondary: hsl(268, 71%, 12%);
+    --bg-tertiary:  hsl(268, 71%, 12%);
+
+    --key-one-primary: hsl(281, 89%, 26%);
+    --key-one-secondary: hsl(285, 91%, 52%);
+    --key-one-tertiary: hsla(280, 56%, 44%, 1);
+
+    --key-two-primary: hsl(176, 100%, 44%);
+    --key-two-secondary: hsl(177, 92%, 70%);
+    --key-two-tertiary: hsla(176, 100%, 79%, 1);
+
+
+    --key-three-primary: hsl(268, 47%, 21%);
+    --key-three-secondary: hsl(290, 70%, 36%);
+    --key-three-tertiary: hsla(268, 54%, 44%, 1);
+
+    --text-head: hsl(52, 100%, 62%);
+    --text-primary: hsl(52, 100%, 62%);
+    --text-secondary: hsl(198, 20%, 13%);
+    --text-tertiary: hsl(0, 0%, 100%);
+}
