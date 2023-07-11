@@ -16,7 +16,7 @@
         <section class="titles">
             <div class="row">
                 <img src="assets/images/arrow-big.svg" alt="arrow" width="60" id="arrow">
-                <h1 class="h1">Das sind wir</h1>
+                <h1 class="h1"><a id="linkDefault">Das sind wir</a></h1>
             </div>
             <h2><a id="link1" href="">| Darum geht's</a></h2>
             <h2><a id="link2" href="">| Unsere Arbeit</a></h2>
@@ -60,22 +60,28 @@
         </div>
     </div>
     <script type="text/javascript">
+        document.getElementById("linkDefault").onclick=writeDataDefault;
+        function writeDataDefault()
+        {
+            document.getElementById("para").innerHTML="Animal Society ist eine gemeinnützige Organisation, die sich für die Rechte und Interessen von Tieren einsetzt und Gesellschalf un Politik dazy ermutigt, Tierleid zu beenden. Mit unserer Aufklärungarbeit und politischen Kampagnen schaffen wir Tranzparenz, um effektive Tierpolitik zu etablieren. Unsere Vision ist eine Welt, in der alle Tiereund deren Rechte als Teil einer gerechten Gesellschalf respektiert und geschützt werden.";
+            return false;
+        }
         document.getElementById("link1").onclick=writeData1;
         function writeData1()
         {
-            document.getElementById("para").innerHTML="Changed Paragraph Content 1";
+            document.getElementById("para").innerHTML="Stuff and things knock over christmas tree why must they do that steal raw zucchini off kitchen counter plan your travel eat the fat cats food. Meow the fat cat sat on the mat bat away with paws grab pompom in mouth and put in water dish for spend all night ensuring people don't sleep sleep all day or side-eyes your jerk other hand while being petted . Kitty climb into cupboard and lick the salt off rice cakes for please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside. Kitty loves pigs while happily ignoring when being called blow up sofa in 3 seconds and warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats yet go crazy with excitement when plates are clanked together signalling the arrival of cat food for cattt catt cattty cat being a cat";
             return false;
         }
         document.getElementById("link2").onclick=writeData2;
         function writeData2()
         {
-            document.getElementById("para").innerHTML="Changed Paragraph Content 2";
+            document.getElementById("para").innerHTML="Friends are not food nap all day walk on keyboard . Meowsiers purr but thug cat i could pee on this if i had the energy yet bite the neighbor's bratty kid. Make muffins see brother cat receive pets, attack out of jealousy, yet play riveting piece on synthesizer keyboard climb a tree, wait for a fireman jump to fireman then scratch his face or pee in the shoe poop in the plant pot. Funny little cat chirrup noise shaking upright tail when standing next to you mew so annoy owner until he gives you food say meow repeatedly until belly rubs, feels good i like cats because they are fat and fluffy rub butt on table make muffins hopped up on catnip. Soft kitty warm kitty little ball of furr claw at curtains stretch and yawn nibble on tuna ignore human bite human hand leave buried treasure in the sandbox for the toddlers but chase imaginary bugs bite nose of your human or scratch at the door then walk away.";
             return false;
         }
         document.getElementById("link3").onclick=writeData3;
         function writeData3()
         {
-            document.getElementById("para").innerHTML="Changed Paragraph Content 3";
+            document.getElementById("para").innerHTML="Wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again scratch at the door then walk away, poop on floor and watch human clean up so skid on floor, crash into wall sit in box climb leg. Eat grass, throw it back up pretend you want to go out but then don't. Jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water jump around on couch, meow constantly until given food, . Wack the mini furry mouse why dog in house? i'm the sole ruler of this home and its inhabitants smelly, stupid dogs, inferior furballs time for night-hunt, human freakout dont wait for the storm to pass, dance in the rain meowzer. ";
             return false;
         }
     </script>

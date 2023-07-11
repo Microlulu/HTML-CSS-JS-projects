@@ -11,7 +11,7 @@
 }
 
 /* Extra small devices (phones, 500px and down) */
-@media only screen and (max-width: 500px) and (min-width: 280px) {
+@media only screen and (min-width: 280px) and (max-width: 500px)  {
   /*first template*/
   .icon {
     display: block;
@@ -140,6 +140,7 @@
     padding: 27px;
     top: 82%;
     left: 5%;
+    margin-top: 10px;
   }
   .small_bloc_footer {
     width: 100%;
@@ -147,7 +148,11 @@
   .container {
     flex-direction: column;
     height: fit-content;
-  }
+    
+}
+.h1{
+  font-size: 38px;
+}
   .text {
     margin: 20px;
     font-size: 15px;
@@ -155,7 +160,7 @@
     width: 90%;
   }
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .titles {
     width: 90%;
@@ -310,6 +315,10 @@
     padding: 27px;
     top: 82%;
     left: 5%;
+    margin-top: 10%;
+  }
+  .h1{
+    font-size: 68px;
   }
   .small_bloc_footer {
     width: 100%;
@@ -324,7 +333,7 @@
     width: 90%;
   }
   h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .titles {
     width: 90%;
@@ -471,6 +480,9 @@
     display: none;
   }
   /*second template*/
+  .h1{
+    font-size: 40px;
+  }
   .text {
     margin-top: 10%;
     margin-right: 3%;
@@ -482,10 +494,12 @@
     margin-left: 5%;
     width: 50%;
 }
+
 h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 .small_footer{
+  margin-top: 10%;
     height: fit-content;
 }
 #btns{
@@ -533,7 +547,7 @@ h2 {
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 3em;
   }
   p {
     font-size: 1.2em;
@@ -669,6 +683,13 @@ h2 {
     flex-direction: row;
     align-items: center;
   }
+
+  .small_footer{
+    margin-top: 5%;
+  }
+  h2{
+    font-size: 30px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -740,5 +761,9 @@ h2 {
     width: 50%;
     font-size: 30px;
     font-weight: 300;
+}
+
+.small_footer{
+  margin-top: 5%;
 }
 }
