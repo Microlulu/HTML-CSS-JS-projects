@@ -1,0 +1,159 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  letter-spacing: 1.225;
+  line-height: 1.7;
+}
+
+body {
+  font-size: 15px;
+  padding: 30px 30px 0px 30px;
+}
+
+.preview-card {
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+  
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 40px;
+  min-width: 150px;
+}
+
+#container a button {
+  width: 150px;
+  height: 45px;
+  border-radius: 22px;
+  font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+#img-box img {
+  margin-bottom: 10px;
+}
+
+#info-box {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+}
+
+#info-box h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 10px;
+}
+
+#info-box p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 20px;
+}
+
+.Sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.Sedans a button {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+.Sedans a button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+.SUVS {
+  background-color: hsl(184, 100%, 22%);
+}
+.SUVS a button {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+}
+.SUVS a button:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+.Luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.Luxury a button {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+}
+.Luxury a button:active {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 10px;
+  color: grey;
+  font-size: 11px;
+}
+.attribution a {
+  text-decoration: none;
+  color: rgb(29, 173, 166);
+  font-weight: 600;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 915px) {
+  body {
+    padding: 50px;
+    font-size: 16px;
+  }
+
+  #container {
+    height: 440px;
+    width: 225px;
+  }
+
+  .preview-card {  
+    flex-direction: row;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(23, 104, 104);
+  }
+
+  #container a button {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  #info-box h1 {
+    font-size: 40px;
+  }
+}
+
+
+
